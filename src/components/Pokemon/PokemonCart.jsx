@@ -65,7 +65,7 @@ const PokemonCart = ({ id, random }) => {
       });
     }
     if (!inView) {
-      animation.start({ x: "2rem" });
+      animation.start({ x: "1rem" });
     }
   }, [inView]);
 
@@ -90,8 +90,8 @@ const PokemonCart = ({ id, random }) => {
             background: bgColor?.find((item) => item.id === random).color,
           }}>
           <motion.img
-            initial={{ y: -1 }}
-            animate={{ y: 1, scale: 1 }}
+            initial={{ y: -2 }}
+            animate={{ y: 2, scale: 1 }}
             transition={{
               duration: 0.5,
               repeat: Infinity,
